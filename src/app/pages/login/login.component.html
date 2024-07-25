@@ -4,6 +4,26 @@
     secundaryButtonText="Sign up"
 >
     <form [formGroup]="loginForm">
+        <app-primary-input
+            formControlName="email"
+            type="email"
+            inputName="email"
+            placeholder="alex@email.com"
+            text="E-mail"
+        >
+            <img src="/assets/icon-email.svg"/>
+        </app-primary-input>
+
+        <app-primary-input
+            formControlName="password"
+            type="password"
+            inputName="password"
+            placeholder="Enter your password"
+            text="Password"
+        >
+            <img src="/assets/icon-pwd.svg"/>
+
+        </app-primary-input>
 
 
     </form>
